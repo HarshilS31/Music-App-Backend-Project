@@ -49,7 +49,7 @@ export const loginUser = async(req,res) => {
         role:user.role
     }
     })
-
+// compare pass using the command bycrypt.compare(string1,
     
 
 
