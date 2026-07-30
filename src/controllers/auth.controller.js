@@ -49,9 +49,13 @@ export const loginUser = async(req,res) => {
         role:user.role
     }
     })
-// compare pass using the command bycrypt.compare(string1,
+
+//compare password using the command bycrypt.compare(string1,
     
 
-
+}
+export const logoutUser = async(req,res) => {
+    res.clearCookie("token")
+    res.status(200).json({message:"User logged out successfully!"})
 
 }
